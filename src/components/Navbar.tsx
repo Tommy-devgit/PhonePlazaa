@@ -42,12 +42,12 @@ export default function Navbar() {
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="/" className="flex gap-2">
-            <span className="text-2xl">PhonePlazaa</span>
-            <img
+            <span className="text-2xl font-bold">Phone<span className='text-primary'>Plazaa</span></span>
+            {/* <img
               src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=red&shade=600"
               alt="PhonePlazaa Logo"
               className="h-8 w-auto"
-            />
+            /> */}
           </a>
         </div>
 
@@ -118,10 +118,10 @@ export default function Navbar() {
           </div>
         </PopoverGroup>
 
-        {/* Desktop login */}
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/contact" className="text-sm font-semibold text-primary">
-            Contact Us &rarr;
+        {/* Desktop contact */}
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
+          <a href="/contact" className="text-sm font-semibold text-black bg-primary w-fit p-2 rounded-2xl hover:brightness-110 transition">
+            Contact Us
           </a>
         </div>
       </nav>
