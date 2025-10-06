@@ -85,18 +85,18 @@ export default function About() {
         <h2 className="text-3xl font-bold text-black text-center mb-12">Meet Our Team</h2>
         <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
           <div className="text-center">
-            <img src={image1} alt="Team Member" className="w-40 h-40 mx-auto rounded-full mb-4 shadow-lg"/>
-            <h3 className="text-lg font-semibold text-black">Kaleab Gishu</h3>
-            <p className="text-gray-600">Founder & CEO</p>
-          </div>
-          <div className="text-center">
             <img src={image2} alt="Team Member" className="w-40 h-40 mx-auto rounded-full mb-4 shadow-lg"/>
             <h3 className="text-lg font-semibold text-black">Dagim Bedo</h3>
             <p className="text-gray-600">Head of Operations</p>
           </div>
           <div className="text-center">
+            <img src={image1} alt="Team Member" className="w-40 h-40 mx-auto rounded-full mb-4 shadow-lg"/>
+            <h3 className="text-lg font-semibold text-black">Kaleab Gishu</h3>
+            <p className="text-gray-600">Founder & CEO</p>
+          </div>
+          <div className="text-center">
             <img src={image3} alt="Team Member" className="w-40 h-40 mx-auto rounded-full mb-4 shadow-lg"/>
-            <h3 className="text-lg font-semibold text-black">David Kim</h3>
+            <h3 className="text-lg font-semibold text-black">Tomas Melesse</h3>
             <p className="text-gray-600">Lead Technician</p>
           </div>
         </div>
