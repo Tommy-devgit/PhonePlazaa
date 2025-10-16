@@ -1,4 +1,3 @@
-// src/components/ProductsSection.tsx
 import ProductCard, { type ProductCardProps } from "./ProductCard";
 
 type ProductsSectionProps = {
