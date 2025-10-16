@@ -16,6 +16,7 @@ import {
   misc,
 } from "../data/products";
 import type { Product } from "../types/products";
+import { motion } from "framer-motion";
 
 export default function ProductsPage() {
   const [firestoreProducts, setFirestoreProducts] = useState<Product[]>([]);
@@ -40,7 +41,6 @@ export default function ProductsPage() {
     fetchProducts();
   }, []);
 
-  // Combine static + Firestore products
   const allProducts: Product[] = [
     ...mobilePhones.map((p) => ({ ...p, category: "Mobile Phones & Accessories" })),
     ...chargers.map((p) => ({ ...p, category: "Chargers & Power Accessories" })),
@@ -60,23 +60,52 @@ export default function ProductsPage() {
   if (loading)
     return <div className="text-center py-24 text-white">Loading products...</div>;
 
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i: number = 1) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.1, duration: 0.6 },
+    }),
+  };
+
   return (
     <div className="bg-black text-white min-h-screen">
-      <ProductsBanner />
-      <h1 className="text-5xl font-bold text-red-600 text-center py-12">
-        Our Products
-      </h1>
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+      >
+        <ProductsBanner />
+      </motion.div>
 
-      {categories.map((category) => {
+      <motion.h1
+        className="text-5xl font-bold text-red-600 text-center py-12"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        Our Products
+      </motion.h1>
+
+      {categories.map((category, index) => {
         const productsInCategory = allProducts.filter(
           (p) => p.category === category
         );
         return (
-          <ProductsSection
+          <motion.div
             key={category}
-            title={category}
-            products={productsInCategory}
-          />
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={index}
+            variants={fadeInUp}
+          >
+            <ProductsSection
+              title={category}
+              products={productsInCategory}
+            />
+          </motion.div>
         );
       })}
     </div>
