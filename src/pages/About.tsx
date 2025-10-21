@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import image1 from "../assets/team/kaleabGishu.jpeg";
-import image2 from "../assets/team/dagimBedo.jpeg";
-import image3 from "../assets/team/tomasMelesse.jpg";
-import storeimage from "../assets/back/storeImage.jpg";
-import backImage from "../assets/back/backAbout.jpg";
+import { aboutImages } from "../data/aboutpage";
+
+const { kaleabGishu, dagimBedo, tomasMelesse, storeImage, backAbout } = aboutImages;
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -25,7 +23,7 @@ export default function About() {
         viewport={{ once: true }}
         variants={fadeInUp}
         custom={0}
-        style={{ backgroundImage: `url(${backImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        style={{ backgroundImage: `url(${backAbout})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className="px-6 py-20 md:py-32 text-center w-3/4 bg-black bg-opacity-70 rounded-2xl">
           <h1 className="text-4xl md:text-6xl font-bold text-[#c1121f] mb-4">
@@ -76,7 +74,7 @@ export default function About() {
             </p>
           </div>
           <img
-            src={storeimage}
+            src={storeImage}
             alt="PhonePlazaa Store"
             className="rounded-xl shadow-lg h-[75%]"
           />
@@ -119,7 +117,7 @@ export default function About() {
       >
         <h2 className="text-3xl font-bold text-[#c1121f] text-center mb-12">Meet Our Team</h2>
         <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-          {[image2, image1, image3].map((img, idx) => (
+          {[kaleabGishu, dagimBedo, tomasMelesse].map((img, idx) => (
             <div key={idx} className="text-center">
               <img src={img} alt="Team Member" className="w-40 h-40 mx-auto rounded-full mb-4 shadow-lg"/>
               <h3 className="text-lg font-semibold text-white">
