@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import image1 from "../assets/Team/KaleabGishu.jpeg";
 import image2 from "../assets/Team/Dagim Bedo.jpeg";
