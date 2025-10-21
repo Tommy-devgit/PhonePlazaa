@@ -1,13 +1,13 @@
-import kaleabGishu from "../assets/team/kaleabGishu.jpeg";
-import dagimBedo from "../assets/team/dagimBedo.jpeg";
-import tomasMelesse from "../assets/team/tomasMelesse.jpg";
-import storeImage from "../assets/back/storeImage.jpg";
-import backAbout from "../assets/back/backAbout.jpg";
+// import kaleabGishu from "../../public/aboutImages/team/kaleabGishu.jpeg";
+// import dagimBedo from "../../public/aboutImages/team/dagimBedo.jpeg";
+// import tomasMelesse from "../../public/aboutImages/team/tomasMelesse.jpg";
+// import storeImage from "../../public/aboutImages/back/storeImage.jpg";
+// import backAbout from "../../public/aboutImages/back/backAbout.jpg";
 
 export const aboutImages = {
-  kaleabGishu,
-  dagimBedo,
-  tomasMelesse,
-  storeImage,
-  backAbout,
+  kaleabGishu: "/aboutImages/team/kaleabGishu.jpeg",
+  dagimBedo: "/aboutImages/team/dagimBedo.jpeg",
+  tomasMelesse: "/aboutImages/team/tomasMelesse.jpg",
+  storeImage: "/aboutImages/back/storeImage.jpg",
+  backAbout: "/aboutImages/back/backAbout.jpg",
 };
