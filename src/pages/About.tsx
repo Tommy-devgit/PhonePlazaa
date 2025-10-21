@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import image1 from "../assets/team/KaleabGishu.jpeg";
-import image2 from "../assets/team/Dagim Bedo.jpeg";
-import image3 from "../assets/team/TomasMelesse.jpg";
+import image1 from "../assets/team/kaleabGishu.jpeg";
+import image2 from "../assets/team/dagimBedo.jpeg";
+import image3 from "../assets/team/tomasMelesse.jpg";
 import storeimage from "../assets/back/StoreImage.jpg";
 import backImage from "../assets/back/backAbout.jpg";
 
