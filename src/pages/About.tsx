@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import image1 from "../assets/Team/KaleabGishu.jpeg";
-import image2 from "../assets/Team/Dagim Bedo.jpeg";
-import image3 from "../assets/Team/TomasMelesse.jpg";
-import storeimage from "../assets/Back/StoreImage.jpg";
-import backImage from "../assets/Back/backAbout.jpg";
+import image1 from "../assets/team/KaleabGishu.jpeg";
+import image2 from "../assets/team/Dagim Bedo.jpeg";
+import image3 from "../assets/team/TomasMelesse.jpg";
+import storeimage from "../assets/back/StoreImage.jpg";
+import backImage from "../assets/back/backAbout.jpg";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
