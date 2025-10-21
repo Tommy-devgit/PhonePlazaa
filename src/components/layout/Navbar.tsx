@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-8 text-gray-400 font-medium">
           <li><Link to="/" className="hover:text-red-600 transition-colors">Home</Link></li>
-          <li><Link to="/products" className="hover:text-red-600 transition-colors">Product</Link></li>
+          <li><Link to="/products" className="hover:text-red-600 transition-colors">Products</Link></li>
           <li><Link to="/services" className="hover:text-red-600 transition-colors">Services</Link></li>
           <li><Link to="/about" className="hover:text-red-600 transition-colors">About</Link></li>
         </ul>
@@ -51,7 +51,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="absolute top-20 w-[90%] max-w-6xl bg-black border border-gray-900 rounded-xl px-6 py-6 flex flex-col gap-6 shadow-lg md:hidden">
           <Link to="/" onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-red-600 transition-colors">Home</Link>
-          <Link to="/product" onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-red-600 transition-colors">Product</Link>
+          <Link to="/products" onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-red-600 transition-colors">Products</Link>
           <Link to="/services" onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-red-600 transition-colors">Services</Link>
           <Link to="/about" onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-red-600 transition-colors">About</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-red-600 transition-colors">Contact</Link>

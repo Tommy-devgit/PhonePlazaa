@@ -2,7 +2,7 @@
 import img1 from "../assets/productImages/productImage (1).jpg";
 import img2 from "../assets/productImages/productImage (2).jpg";
 import img3 from "../assets/productImages/productImage (3).jpg";
-import img4 from "../assets/productImages/productImage (4).jpg";
+import img4 from "../assets/productImages/productImage (4).png";
 import img5 from "../assets/productImages/productImage (5).jpg";
 import img6 from "../assets/productImages/productImage (6).jpg";
 import img7 from "../assets/productImages/productImage (7).jpg";
@@ -10,7 +10,7 @@ import img8 from "../assets/productImages/productImage (8).jpg";
 import img9 from "../assets/productImages/productImage (9).jpg";
 import img10 from "../assets/productImages/productImage (10).jpg";
 import img11 from "../assets/productImages/productImage (11).jpg";
-import img12 from "../assets/productImages/productImage (12).jpg";
+import img12 from "../assets/productImages/productImage (12).jpeg";
 import img13 from "../assets/productImages/productImage (13).jpg";
 import img14 from "../assets/productImages/productImage (14).jpg";
 import img15 from "../assets/productImages/productImage (15).jpg";
